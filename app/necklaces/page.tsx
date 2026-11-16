@@ -6,8 +6,17 @@ export default function Necklaces() {
           <source src="/videos/necklaces.mp4" type="video/mp4" />
         </video>
       </div>
+      <div className="fallback">
+        <div>
+          <h1>NECKLACES</h1>
+          <p>Timeless Radiance &middot; Frost Yourself</p>
+        </div>
+      </div>
       <nav className="nav-overlay">
-        <div className="logo">YAKIR'S FINE JEWELRY</div>
+        <div className="logo">
+          YAKIR'S
+          <span>FINE JEWELRY</span>
+        </div>
         <div>
           <a href="/" target="_blank" rel="noopener noreferrer">Home</a>
           <a href="/rings" target="_blank" rel="noopener noreferrer">Rings</a>
