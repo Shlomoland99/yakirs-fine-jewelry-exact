@@ -7,8 +7,10 @@
 html, body {
   height: 100%;
   width: 100%;
-  background: #000;
-  font-family: 'Playfair Display', serif, system-ui;
+  background: #0a0a0a;
+  color: #f5e8d3;
+  font-family: 'Playfair Display', Georgia, serif;
+  overflow-x: hidden;
 }
 
 .video-container {
@@ -32,11 +34,11 @@ html, body {
   left: 0;
   width: 100%;
   z-index: 10;
-  padding: 1.5rem 2rem;
+  padding: 1.8rem 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.75), transparent);
   pointer-events: none;
 }
 
@@ -44,18 +46,52 @@ html, body {
   pointer-events: auto;
   color: #d4af37;
   text-decoration: none;
-  margin: 0 1rem;
-  font-size: 0.9rem;
-  letter-spacing: 0.1em;
+  margin: 0 1.2rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
 .nav-overlay a:hover {
-  color: #fff;
+  color: #ffffff;
 }
 
 .logo {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
+  letter-spacing: 0.08em;
   color: #d4af37;
+}
+
+.logo span {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  margin-top: 0.2rem;
+  opacity: 0.85;
+}
+
+.fallback {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #1a0f1a 0%, #0a0a0a 70%);
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+}
+
+.fallback h1 {
+  font-size: 3rem;
+  color: #d4af37;
+  margin-bottom: 1rem;
+}
+
+.fallback p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  max-width: 600px;
 }
